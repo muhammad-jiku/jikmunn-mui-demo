@@ -1,10 +1,19 @@
 import React from 'react';
 import './App.css';
+import Button from '@mui/material/Button';
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello there!!</h1>
+      <Button
+        variant="contained"
+        color="success"
+        sx={{
+          mt: '2rem',
+        }}
+      >
+        Hello
+      </Button>
     </div>
   );
 }
