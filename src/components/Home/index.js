@@ -7,6 +7,7 @@ import Products from '../Products';
 import Promotions from '../Promotions';
 import UIProvider from '../../context';
 import AppDrawer from '../Drawer';
+import SearchBox from '../Search';
 
 const Home = () => {
   return (
@@ -22,6 +23,7 @@ const Home = () => {
           <Navbar />
           <Banner />
           <Promotions />
+          <SearchBox />
           <Box
             display="flex"
             justifyContent="center"
