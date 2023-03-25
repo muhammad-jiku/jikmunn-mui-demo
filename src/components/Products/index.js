@@ -1,5 +1,9 @@
 import React from 'react';
+
+//  external imports
 import { Container, Grid, useMediaQuery, useTheme } from '@mui/material';
+
+//  internal imports
 import { products } from '../../data';
 import SingleProduct from './SingleProduct';
 import SingleProductDesktop from './SingleProductDesktop';

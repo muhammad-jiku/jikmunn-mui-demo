@@ -1,9 +1,13 @@
 import React, { useState } from 'react';
+
+//  external imports
 import AddIcon from '@mui/icons-material/Add';
 import RemoveIcon from '@mui/icons-material/Remove';
-import { Colors } from '../../styles/theme';
 import { Box, IconButton, Typography } from '@mui/material';
+
+//  internal imports
 import { clamp } from './clamp';
+import { Colors } from '../../styles/theme';
 
 const IncDec = () => {
   const clampV = clamp(1, 10);

@@ -1,4 +1,6 @@
 import React from 'react';
+
+//  external imports
 import {
   Divider,
   Drawer,
@@ -8,10 +10,12 @@ import {
   styled,
 } from '@mui/material';
 import { lighten } from 'polished';
+import CloseIcon from '@mui/icons-material/Close';
+
+//  internal imports
+import { Colors } from '../../styles/theme';
 import { useUIContext } from '../../context';
 import { DrawerCloseButton } from '../../styles/navbar';
-import { Colors } from '../../styles/theme';
-import CloseIcon from '@mui/icons-material/Close';
 
 const AppDrawer = () => {
   const MiddleDivider = styled((props) => (

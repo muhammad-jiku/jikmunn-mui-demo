@@ -1,5 +1,9 @@
 import React from 'react';
+
+//  external import
 import { Typography } from '@mui/material';
+
+//  internal imports
 import {
   BannerContainer,
   BannerContent,

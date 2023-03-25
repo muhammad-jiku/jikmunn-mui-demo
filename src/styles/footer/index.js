@@ -1,4 +1,7 @@
+//  external imports
 import { styled, TextField, Typography } from '@mui/material';
+
+//  internal import
 import { Colors } from '../theme';
 
 export const FooterTitle = styled(Typography)(() => ({

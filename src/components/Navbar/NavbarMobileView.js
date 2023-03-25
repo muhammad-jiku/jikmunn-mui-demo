@@ -1,10 +1,14 @@
 import React from 'react';
+
+//  external imports
 import { IconButton } from '@mui/material';
-import { NavbarContainer, NavbarHeader } from '../../styles/navbar';
 import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
+
+//  internal imports
 import Actions from './Actions';
 import { useUIContext } from '../../context';
+import { NavbarContainer, NavbarHeader } from '../../styles/navbar';
 
 const NavbarMobileView = ({ matches }) => {
   const { setDrawerOpen, setShowSearchBox } = useUIContext();

@@ -1,13 +1,19 @@
 import React from 'react';
+
+//  external imports
 import { Box, Container, Stack, Typography } from '@mui/material';
-import Banner from '../Banner';
-import Footer from '../Footer';
-import Navbar from '../Navbar';
-import Products from '../Products';
-import Promotions from '../Promotions';
+
+//  internal imports
+import {
+  AppDrawerCompo,
+  BannerCompo,
+  FooterCompo,
+  NavbarCompo,
+  ProductsCompo,
+  PromotionsCompo,
+  SearchBoxCompo,
+} from '..';
 import UIProvider from '../../context';
-import AppDrawer from '../Drawer';
-import SearchBox from '../Search';
 
 const Home = () => {
   return (
@@ -20,10 +26,10 @@ const Home = () => {
     >
       <Stack>
         <UIProvider>
-          <Navbar />
-          <Banner />
-          <Promotions />
-          <SearchBox />
+          <NavbarCompo />
+          <BannerCompo />
+          <PromotionsCompo />
+          <SearchBoxCompo />
           <Box
             display="flex"
             justifyContent="center"
@@ -33,9 +39,9 @@ const Home = () => {
           >
             <Typography variant="h4">Our Products</Typography>
           </Box>
-          <Products />
-          <Footer />
-          <AppDrawer />
+          <ProductsCompo />
+          <FooterCompo />
+          <AppDrawerCompo />
         </UIProvider>
       </Stack>
     </Container>

@@ -1,9 +1,13 @@
 import React from 'react';
+
+//  external imports
+import CloseIcon from '@mui/icons-material/Close';
+import SearchIcon from '@mui/icons-material/Search';
 import { Box, IconButton, Slide, styled, TextField } from '@mui/material';
+
+//  internal imports
 import { Colors } from '../../styles/theme';
 import { useUIContext } from '../../context';
-import SearchIcon from '@mui/icons-material/Search';
-import CloseIcon from '@mui/icons-material/Close';
 
 const SearchBox = () => {
   const { showSearchBox, setShowSearchBox } = useUIContext();

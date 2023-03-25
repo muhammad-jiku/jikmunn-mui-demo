@@ -1,3 +1,4 @@
+//  internal imports
 import bag1 from '../assets/products/bag_01.png';
 import bag2 from '../assets/products/bag_02.png';
 import bag3 from '../assets/products/bag_03.png';

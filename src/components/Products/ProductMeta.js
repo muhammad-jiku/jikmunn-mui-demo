@@ -1,5 +1,9 @@
 import React from 'react';
+
+//  external import
 import { Typography } from '@mui/material';
+
+//  internal import
 import { ProductMetaWrapper } from '../../styles/products';
 
 const ProductMeta = ({ product, matches }) => {

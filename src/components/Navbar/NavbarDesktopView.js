@@ -1,9 +1,13 @@
 import React from 'react';
-import { ListItemButton, ListItemIcon, ListItemText } from '@mui/material';
-import { MyList, NavbarContainer, NavbarHeader } from '../../styles/navbar';
+
+//  external imports
 import SearchIcon from '@mui/icons-material/Search';
+import { ListItemButton, ListItemIcon, ListItemText } from '@mui/material';
+
+//  internal imports
 import Actions from './Actions';
 import { useUIContext } from '../../context';
+import { MyList, NavbarContainer, NavbarHeader } from '../../styles/navbar';
 
 const NavbarDesktopView = ({ matches }) => {
   const { setShowSearchBox } = useUIContext();

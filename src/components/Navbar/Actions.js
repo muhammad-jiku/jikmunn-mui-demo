@@ -1,14 +1,18 @@
 import React from 'react';
+
+//  external imports
 import { Divider, ListItemButton, ListItemIcon } from '@mui/material';
-import {
-  ActionIconsContainerDesktop,
-  ActionIconsContainerMobile,
-  MyList,
-} from '../../styles/navbar';
-import { Colors } from '../../styles/theme';
 import PersonIcon from '@mui/icons-material/Person';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+
+//  internal imports
+import {
+  MyList,
+  ActionIconsContainerMobile,
+  ActionIconsContainerDesktop,
+} from '../../styles/navbar';
+import { Colors } from '../../styles/theme';
 
 const Actions = ({ matches }) => {
   const Component = matches

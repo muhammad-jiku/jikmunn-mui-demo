@@ -5,6 +5,7 @@
  * w: http://animista.net, t: @cssanimista
  * ---------------------------------------------- */
 
+//  external import
 import { keyframes } from '@emotion/react';
 
 export const flipHorizontalBottom = keyframes`

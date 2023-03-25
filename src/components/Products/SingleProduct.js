@@ -1,5 +1,12 @@
 import React, { useState } from 'react';
+
+//  external imports
 import { Stack, Tooltip } from '@mui/material';
+import ShareIcon from '@mui/icons-material/Share';
+import FavoriteIcon from '@mui/icons-material/Favorite';
+import FitScreenIcon from '@mui/icons-material/FitScreen';
+
+//  internal imports
 import {
   Product,
   ProductActionButton,
@@ -8,11 +15,8 @@ import {
   ProductFavButton,
   ProductImage,
 } from '../../styles/products';
-import ShareIcon from '@mui/icons-material/Share';
-import FavoriteIcon from '@mui/icons-material/Favorite';
-import FitScreenIcon from '@mui/icons-material/FitScreen';
-import ProductMeta from './ProductMeta';
 import useDialogModal from '../../hook';
+import ProductMeta from './ProductMeta';
 import ProductDetail from '../ProductDetail';
 
 const SingleProduct = ({ product, matches }) => {

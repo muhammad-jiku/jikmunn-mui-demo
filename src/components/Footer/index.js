@@ -1,5 +1,6 @@
 import React from 'react';
-import FacebookIcon from '@mui/icons-material/Facebook';
+
+//  external imports
 import {
   Box,
   Button,
@@ -9,9 +10,12 @@ import {
   Stack,
   Typography,
 } from '@mui/material';
-import TwitterIcon from '@mui/icons-material/Twitter';
-import InstagramIcon from '@mui/icons-material/Instagram';
 import SendIcon from '@mui/icons-material/Send';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import InstagramIcon from '@mui/icons-material/Instagram';
+
+//  internal imports
 import { Colors } from '../../styles/theme';
 import { FooterTitle, SubscribeTf } from '../../styles/footer';
 

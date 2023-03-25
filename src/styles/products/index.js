@@ -1,6 +1,9 @@
+//  external imports
 import { Box, Button, IconButton, styled } from '@mui/material';
-import { slideInBottom, slideInRight } from '../../animation';
+
+//  internal imports
 import { Colors } from '../theme';
+import { slideInBottom, slideInRight } from '../../animation';
 
 export const Product = styled(Box)(({ theme }) => ({
   display: 'flex',

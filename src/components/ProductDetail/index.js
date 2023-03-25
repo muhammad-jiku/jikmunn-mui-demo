@@ -1,4 +1,6 @@
 import React from 'react';
+
+//  external imports
 import {
   Box,
   Button,
@@ -12,14 +14,16 @@ import {
   useMediaQuery,
   useTheme,
 } from '@mui/material';
-import { Product, ProductImage } from '../../styles/products';
-import { Colors } from '../../styles/theme';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import TwitterIcon from '@mui/icons-material/Twitter';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import FavoriteIcon from '@mui/icons-material/Favorite';
 import CloseIcon from '@mui/icons-material/Close';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import FavoriteIcon from '@mui/icons-material/Favorite';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import InstagramIcon from '@mui/icons-material/Instagram';
+
+//  internal imports
 import IncDec from '../ui';
+import { Colors } from '../../styles/theme';
+import { Product, ProductImage } from '../../styles/products';
 
 const ProductDetail = ({ open, onClose, product }) => {
   const SlideTransition = (props) => {

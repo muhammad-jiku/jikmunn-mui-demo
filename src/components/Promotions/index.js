@@ -1,5 +1,9 @@
-import { Box, Slide } from '@mui/material';
 import React, { useEffect, useRef, useState } from 'react';
+
+//  external imports
+import { Box, Slide } from '@mui/material';
+
+//  internal imports
 import { MessageText, PromotionsContainer } from '../../styles/promotions';
 
 const Promotions = () => {

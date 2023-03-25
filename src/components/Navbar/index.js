@@ -1,5 +1,9 @@
 import React from 'react';
+
+//  external imports
 import { useMediaQuery, useTheme } from '@mui/material';
+
+//  internal imports
 import NavbarMobileView from './NavbarMobileView';
 import NavbarDesktopView from './NavbarDesktopView';
 
