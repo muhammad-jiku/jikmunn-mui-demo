@@ -1,4 +1,5 @@
 import { Box, List, styled, Typography } from '@mui/material';
+import { textPopUpTop } from '../../animation';
 import { Colors } from '../theme';
 
 export const NavbarContainer = styled(Box)(() => ({
@@ -16,7 +17,7 @@ export const NavbarHeader = styled(Typography)(() => ({
   fontFamily: '"Montez", "cursive"',
   color: Colors.secondary,
   '&:hover': {
-    // animation: `${textPopUpTop} 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both`,
+    animation: `${textPopUpTop} 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both`,
   },
 }));
 

@@ -1,4 +1,5 @@
 import { Box, Button, IconButton, styled } from '@mui/material';
+import { slideInBottom, slideInRight } from '../../animation';
 import { Colors } from '../theme';
 
 export const Product = styled(Box)(({ theme }) => ({
@@ -48,9 +49,9 @@ export const ProductAddToCart = styled(Button, {
     bottom: '2%',
     width: '300px',
     padding: '10px 5px',
-    // animation:
-    //   show &&
-    //   `${slideInBottom} 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both`,
+    animation:
+      show &&
+      `${slideInBottom} 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both`,
   },
   background: Colors.secondary,
   opacity: 0.9,
@@ -69,8 +70,8 @@ export const ProductActionsWrapper = styled(Box)(({ show, theme }) => ({
     position: 'absolute',
     right: 0,
     top: '20%',
-    // animation:
-    //   show &&
-    //   `${slideInRight} 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both`,
+    animation:
+      show &&
+      `${slideInRight} 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both`,
   },
 }));
