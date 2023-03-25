@@ -1,5 +1,6 @@
 import { Container, Stack } from '@mui/material';
 import React from 'react';
+import Banner from '../Banner';
 import Footer from '../Footer';
 import Navbar from '../Navbar';
 
@@ -14,6 +15,7 @@ const Home = () => {
     >
       <Stack>
         <Navbar />
+        <Banner />
         <Footer />
       </Stack>
     </Container>
