@@ -3,8 +3,10 @@ import { ListItemButton, ListItemIcon, ListItemText } from '@mui/material';
 import { MyList, NavbarContainer, NavbarHeader } from '../../styles/navbar';
 import SearchIcon from '@mui/icons-material/Search';
 import Actions from './Actions';
+import { useUIContext } from '../../context';
 
 const NavbarDesktopView = ({ matches }) => {
+  const { setShowSearchBox } = useUIContext();
   return (
     <NavbarContainer>
       <NavbarHeader variant="h4">My Bags</NavbarHeader>
@@ -14,7 +16,7 @@ const NavbarDesktopView = ({ matches }) => {
         <ListItemText primary="Products" />
         <ListItemText primary="About us" />
         <ListItemText primary="Contact us" />
-        <ListItemButton>
+        <ListItemButton onClick={() => setShowSearchBox(true)}>
           <ListItemIcon>
             <SearchIcon />
           </ListItemIcon>

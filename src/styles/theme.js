@@ -1,7 +1,7 @@
 import { createTheme } from '@mui/material/styles';
 import { lighten } from 'polished';
 
-// export const DrawerWidth = 250;
+export const DrawerWidth = 250;
 
 export const Colors = {
   primary: '#5f2c3e',
@@ -60,17 +60,17 @@ export const theme = createTheme({
         },
       },
     },
-    // MuiDrawer: {
-    //   styleOverrides: {
-    //     paper: {
-    //       width: DrawerWidth,
-    //       background: Colors.primary,
-    //       color: Colors.secondary,
-    //       borderRadius: '0px 100px 0px 0px',
-    //       borderRight: `1px solid ${Colors.primary}`,
-    //     },
-    //   },
-    // },
+    MuiDrawer: {
+      styleOverrides: {
+        paper: {
+          width: DrawerWidth,
+          background: Colors.primary,
+          color: Colors.secondary,
+          borderRadius: '0px 100px 0px 0px',
+          borderRight: `1px solid ${Colors.primary}`,
+        },
+      },
+    },
     MuiDivider: {
       styleOverrides: {
         root: {

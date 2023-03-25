@@ -1,6 +1,6 @@
-import { Box, List, styled, Typography } from '@mui/material';
+import { Box, IconButton, List, styled, Typography } from '@mui/material';
 import { textPopUpTop } from '../../animation';
-import { Colors } from '../theme';
+import { Colors, DrawerWidth } from '../theme';
 
 export const NavbarContainer = styled(Box)(() => ({
   display: 'flex',
@@ -42,4 +42,11 @@ export const MyList = styled(List)(({ type }) => ({
   flexGrow: 3,
   justifyContent: 'center',
   alignItems: 'center',
+}));
+
+export const DrawerCloseButton = styled(IconButton)(() => ({
+  position: 'absolute',
+  top: 10,
+  left: DrawerWidth,
+  zIndex: 1999,
 }));

@@ -6,6 +6,7 @@ import Navbar from '../Navbar';
 import Products from '../Products';
 import Promotions from '../Promotions';
 import UIProvider from '../../context';
+import AppDrawer from '../Drawer';
 
 const Home = () => {
   return (
@@ -32,6 +33,7 @@ const Home = () => {
           </Box>
           <Products />
           <Footer />
+          <AppDrawer />
         </UIProvider>
       </Stack>
     </Container>

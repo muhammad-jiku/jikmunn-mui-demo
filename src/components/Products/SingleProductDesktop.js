@@ -12,8 +12,13 @@ import {
   ProductImage,
 } from '../../styles/products';
 import ProductMeta from './ProductMeta';
+import useDialogModal from '../../hook';
+import ProductDetail from '../ProductDetail';
 
 const SingleProductDesktop = ({ product, matches }) => {
+  const [ProductDetailDialog, showProductDetailDialog, closeProductDialog] =
+    useDialogModal(ProductDetail);
+
   const [showOptions, setShowOptions] = useState(false);
 
   const handleMouseEnter = () => {
@@ -43,7 +48,7 @@ const SingleProductDesktop = ({ product, matches }) => {
                 <ShareIcon color="primary" />
               </Tooltip>
             </ProductActionButton>
-            <ProductActionButton>
+            <ProductActionButton onClick={() => showProductDetailDialog()}>
               <Tooltip placement="left" title="Full view">
                 <FitScreenIcon color="primary" />
               </Tooltip>
@@ -52,6 +57,7 @@ const SingleProductDesktop = ({ product, matches }) => {
         </ProductActionsWrapper>
       </Product>
       <ProductMeta product={product} />
+      <ProductDetailDialog product={product} />
     </>
   );
 };
