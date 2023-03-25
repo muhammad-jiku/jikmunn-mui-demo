@@ -1,5 +1,6 @@
 import { Container, Stack } from '@mui/material';
 import React from 'react';
+import Footer from '../Footer';
 import Navbar from '../Navbar';
 
 const Home = () => {
@@ -13,6 +14,7 @@ const Home = () => {
     >
       <Stack>
         <Navbar />
+        <Footer />
       </Stack>
     </Container>
   );
