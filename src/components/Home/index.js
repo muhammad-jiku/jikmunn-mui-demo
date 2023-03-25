@@ -1,5 +1,5 @@
-import { Container, Stack } from '@mui/material';
 import React from 'react';
+import { Box, Container, Stack, Typography } from '@mui/material';
 import Banner from '../Banner';
 import Footer from '../Footer';
 import Navbar from '../Navbar';
@@ -19,6 +19,15 @@ const Home = () => {
         <Navbar />
         <Banner />
         <Promotions />
+        <Box
+          display="flex"
+          justifyContent="center"
+          sx={{
+            p: 4,
+          }}
+        >
+          <Typography variant="h4">Our Products</Typography>
+        </Box>
         <Products />
         <Footer />
       </Stack>
