@@ -3,6 +3,7 @@ import React from 'react';
 import Banner from '../Banner';
 import Footer from '../Footer';
 import Navbar from '../Navbar';
+import Promotions from '../Promotions';
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
       <Stack>
         <Navbar />
         <Banner />
+        <Promotions />
         <Footer />
       </Stack>
     </Container>
