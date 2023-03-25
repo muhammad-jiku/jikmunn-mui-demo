@@ -1,7 +1,7 @@
-export { Navbar as NavbarCompo } from './Navbar';
-export { Banner as BannerCompo } from './Banner';
-export { Promotions as PromotionsCompo } from './Promotions';
-export { SearchBox as SearchBoxCompo } from './Search';
-export { Products as ProductsCompo } from './Products';
-export { AppDrawer as AppDrawerCompo } from './Drawer';
-export { Footer as FooterCompo } from './Footer';
+export { default as Navbar } from './Navbar';
+export { default as Banner } from './Banner';
+export { default as Promotions } from './Promotions';
+export { default as SearchBox } from './Search';
+export { default as Products } from './Products';
+export { default as AppDrawer } from './Drawer';
+export { default as Footer } from './Footer';
